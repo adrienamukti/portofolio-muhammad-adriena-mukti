@@ -101,7 +101,7 @@ export const workData = [
 
     {
         title: 'GF Apps',
-        description: 'Web Application',
+        description: 'Web Application for D',
         bgImage: '/bucin-1.jpg',
 
         category: 'Web Development',

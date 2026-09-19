@@ -46,6 +46,12 @@ import linkedin_dark from './linkedin_dark.png';
 import github_icon from './github_icon.png';
 import github_dark from './github_dark.png';
 
+const basePath =
+    process.env.NODE_ENV === 'production'
+        ? '/portofolio-muhammad-adriena-mukti'
+        : ''
+        
+const publicPath = (path) => `${basePath}${path}`
 
 export const assets = {
     user_image,
@@ -100,9 +106,9 @@ export const assets = {
 export const workData = [
 
     {
-        title: 'GF Apps',
+        title: 'Apps for my Her D',
         description: 'Web Application for D',
-        bgImage: '/bucin-1.jpg',
+        bgImage: publicPath('/bucin-1.jpg'),
 
         category: 'Web Development',
 
@@ -128,7 +134,7 @@ export const workData = [
         slug: 'competency-assessment-system',
         title: 'Competency Assessment System',
         description: 'Laravel Web Application',
-        bgImage: '/lsp-1.png',
+        bgImage: publicPath('/lsp-1.png'),
 
         category: 'Web Development',
 
@@ -161,9 +167,9 @@ export const workData = [
         ],
 
         images: [
-            '/projects/lsp/lsp-1.png',
-            '/projects/lsp/lsp-2.png',
-            '/projects/lsp/lsp-3.png'
+            publicPath('/projects/lsp/lsp-1.png'),
+            publicPath('/projects/lsp/lsp-2.png'),
+            publicPath('/projects/lsp/lsp-3.png')
         ]
     },
 
@@ -171,7 +177,7 @@ export const workData = [
     {
         title: 'House Price Prediction',
         description: 'Comparation Machine Learning Algorithm',
-        bgImage: '/house-price-prediction.png',
+        bgImage: publicPath('/house-price-prediction.png'),
 
         category: 'Machine Learning',
 
@@ -197,9 +203,9 @@ export const workData = [
         ],
 
         images: [
-            '/projects/house-prediction/house-pred-1.png',
-            '/projects/house-prediction/house-pred-2.png',
-            '/projects/house-prediction/house-pred-3.png'
+            publicPath('/projects/house-prediction/house-pred-1.png'),
+            publicPath('/projects/house-prediction/house-pred-2.png'),
+            publicPath('/projects/house-prediction/house-pred-3.png')
         ]
     },
 
@@ -207,7 +213,7 @@ export const workData = [
     {
         title: 'Mini Clinic Information System',
         description: 'Full-Stack Clinic Management Web Application',
-        bgImage: '/work-3.png',
+        bgImage: publicPath('/work-3.png'),
 
         category: 'Web Development',
 
@@ -237,17 +243,17 @@ export const workData = [
         ],
 
         images: [
-            '/projects/mini-clinic/clinic-1.png',
-            '/projects/mini-clinic/clinic-2.png',
-            '/projects/mini-clinic/clinic-3.png',
-            '/projects/mini-clinic/clinic-4.png'
+            publicPath('/projects/mini-clinic/clinic-1.png'),
+            publicPath('/projects/mini-clinic/clinic-2.png'),
+            publicPath('/projects/mini-clinic/clinic-3.png'),
+            publicPath('/projects/mini-clinic/clinic-4.png')
         ]
     },
 
     {
         title: 'Sugar Sales Data Analysis',
         description: 'Data Analytics Project',
-        bgImage: '/work-4.png',
+        bgImage: publicPath('/work-4.png'),
 
         category: 'Data Analytics',
 
@@ -269,8 +275,8 @@ export const workData = [
         ],
 
         images: [
-            '/projects/sales/sales-1.png',
-            '/projects/sales/sales-2.png'
+            publicPath('/projects/sales/sales-1.png'),
+            publicPath('/projects/sales/sales-2.png')
         ]
     },
 

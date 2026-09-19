@@ -11,8 +11,6 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
-import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
@@ -35,6 +33,19 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import laravel from './laravel.png';
+import nodejs from './nodejs.png';
+import reactjs from './reactjs.png';
+import jiraa from './jiraa.png';
+import web from './web.png';
+import backend from './backend.png';
+import testing from './testing.png';
+import api from './api.png';
+import linkedin_icon from './linkedin_icon.png';
+import linkedin_dark from './linkedin_dark.png';
+import github_icon from './github_icon.png';
+import github_dark from './github_dark.png';
+
 
 export const assets = {
     user_image,
@@ -50,8 +61,6 @@ export const assets = {
     git,
     mongodb,
     right_arrow_white,
-    logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
     profile_img,
@@ -73,45 +82,233 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    laravel,
+    nodejs,
+    reactjs,
+    jiraa,
+    web,
+    api,
+    testing,
+    backend,
+    linkedin_icon,
+    linkedin_dark,
+    github_icon,
+    github_dark
 };
 
 export const workData = [
+
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'GF Apps',
+        description: 'Web Application',
+        bgImage: '/bucin-1.jpg',
+
+        category: 'Web Development',
+
+        overview:
+            'A web application developed to provide an accessible and user-friendly digital experience.',
+
+        demoUrl: 'https://adrienamukti.github.io/gf-dini-apps/',
+
+        technologies: [
+            
+        ],
+
+        features: [
+         
+        ],
+
+        images: [
+            
+        ]
     },
+
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        slug: 'competency-assessment-system',
+        title: 'Competency Assessment System',
+        description: 'Laravel Web Application',
+        bgImage: '/lsp-1.png',
+
+        category: 'Web Development',
+
+        overview:
+            'A web-based competency certification assessment management system developed during my internship at SMK Telkom Bandung. The system digitalizes the assessment process for students, assessors, and administrators.',
+
+        technologies: [
+            'PHP',
+            'Laravel 11',
+            'MySQL',
+            'Tailwind CSS',
+            'JavaScript',
+            'WhatsApp API'
+        ],
+
+        features: [
+            'Student account registration',
+            'Assessment scheduling',
+            'Assessee distribution',
+            'Assessment document management',
+            'WhatsApp notification integration',
+            'Assessment workflow management'
+        ],
+
+        testing: [
+            'Black-box testing',
+            'Functional verification',
+            'Debugging',
+            'Feature retesting'
+        ],
+
+        images: [
+            '/projects/lsp/lsp-1.png',
+            '/projects/lsp/lsp-2.png',
+            '/projects/lsp/lsp-3.png'
+        ]
     },
+
+
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'House Price Prediction',
+        description: 'Comparation Machine Learning Algorithm',
+        bgImage: '/house-price-prediction.png',
+
+        category: 'Machine Learning',
+
+        overview:
+            'A machine learning project for predicting residential property prices using property characteristics, location information, and accessibility-related features.',
+
+        technologies: [
+            'Python',
+            'Pandas',
+            'Scikit-learn',
+            'Random Forest',
+            'XGBoost',
+            'LightGBM',
+            'Streamlit'
+        ],
+
+        features: [
+            'Property data preprocessing',
+            'Feature engineering',
+            'Location encoding',
+            'Model training and optimization',
+            'Model performance comparison'
+        ],
+
+        images: [
+            '/projects/house-prediction/house-pred-1.png',
+            '/projects/house-prediction/house-pred-2.png',
+            '/projects/house-prediction/house-pred-3.png'
+        ]
+    },
+
+
+    {
+        title: 'Mini Clinic Information System',
+        description: 'Full-Stack Clinic Management Web Application',
         bgImage: '/work-3.png',
+
+        category: 'Web Development',
+
+        overview:
+            'A full-stack clinic management web application designed to manage patient data, registrations, queues, medical examinations, and prescriptions in an integrated workflow. The system implements JWT-based authentication and role-based access for Administrator, Doctor, and Registration Staff, supported by a RESTful API and MySQL database.',
+
+        technologies: [
+            'React.js',
+            'Node.js',
+            'Express.js',
+            'MySQL',
+            'JWT Authentication',
+            'RESTful API',
+            'Postman'
+        ],
+
+        features: [
+            'JWT-based authentication and role-based authorization',
+            'Patient data management with automatic medical record numbers',
+            'Patient registration and visit management',
+            'Automatic clinic queue numbering and queue status management',
+            'Medical examination records using SOAP format',
+            'Prescription and medication management',
+            'Dashboard with clinic activity summary',
+            'Search, pagination, validation, and error handling',
+            'RESTful API testing and automated API testing using Postman Collection Runner'
+        ],
+
+        images: [
+            '/projects/mini-clinic/clinic-1.png',
+            '/projects/mini-clinic/clinic-2.png',
+            '/projects/mini-clinic/clinic-3.png',
+            '/projects/mini-clinic/clinic-4.png'
+        ]
     },
+
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Sugar Sales Data Analysis',
+        description: 'Data Analytics Project',
         bgImage: '/work-4.png',
+
+        category: 'Data Analytics',
+
+        overview:
+            'A data analytics project completed during the RevoU MSIB program to analyze sales performance and identify opportunities for business improvement.',
+
+        technologies: [
+            'Python',
+            'SQL',
+            'Power BI'
+        ],
+
+        features: [
+            'Sales performance analysis',
+            'Customer analysis',
+            'Regional sales analysis',
+            'Shipping lead time analysis',
+            'Interactive dashboard'
+        ],
+
+        images: [
+            '/projects/sales/sales-1.png',
+            '/projects/sales/sales-2.png'
+        ]
     },
+
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    {
+        icon: assets.web,
+        title: 'Web Development',
+        description: 'Developing responsive web applications with a focus on functionality, clean implementation, and user requirements.',
+        link: '#work'
+    },
+    {
+        icon: assets.backend,
+        title: 'Backend Development',
+        description: 'Building backend functionality, business logic, database management, and application features using Laravel and MySQL.',
+        link: '#work'
+    },
+    {
+        icon: assets.testing,
+        title: 'Software Testing',
+        description: 'Performing manual, functional, and black-box testing to identify issues and verify that application features meet requirements.',
+        link: '#work'
+    },
+    {
+        icon: assets.api,
+        title: 'API Integration',
+        description: 'Integrating APIs into web applications to connect external services and automate application workflows.',
+        link: '#work'
+    }
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Frameworks', description: 'PHP, Laravel, Node.js, React Js, Next Js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor in Informatics Engineering from Universitas Langlangbuana ' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 4 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.laravel, assets.nodejs, assets.reactjs, assets.git, assets.jiraa, assets.web,
 ];

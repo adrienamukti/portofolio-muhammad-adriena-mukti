@@ -45,6 +45,8 @@ import linkedin_icon from './linkedin_icon.png';
 import linkedin_dark from './linkedin_dark.png';
 import github_icon from './github_icon.png';
 import github_dark from './github_dark.png';
+import postman from './postman.png';
+import nextjs from './nextjs.png';
 
 const basePath =
     process.env.NODE_ENV === 'production'
@@ -100,7 +102,9 @@ export const assets = {
     linkedin_icon,
     linkedin_dark,
     github_icon,
-    github_dark
+    github_dark,
+    postman,
+    nextjs
 };
 
 export const workData = [
@@ -258,7 +262,7 @@ export const workData = [
         category: 'Data Analytics',
 
         overview:
-            'A data analytics project completed during the RevoU MSIB program to analyze sales performance and identify opportunities for business improvement.',
+            'A data analytics project completed during the RevoU MSIB program bath 7 to analyze sales performance and identify opportunities for business improvement.',
 
         technologies: [
             'Python',
@@ -275,8 +279,8 @@ export const workData = [
         ],
 
         images: [
-            publicPath('/projects/sales/sales-1.png'),
-            publicPath('/projects/sales/sales-2.png')
+            publicPath('/projects/candy-sales/candy-sales-1.png'),
+            publicPath('/projects/candy-sales/candy-sales-2.png')
         ]
     },
 
@@ -316,5 +320,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.laravel, assets.nodejs, assets.reactjs, assets.git, assets.jiraa, assets.web,
+    assets.laravel, assets.nodejs, assets.reactjs, assets.nextjs, assets.git, assets.postman, assets.jiraa
 ];

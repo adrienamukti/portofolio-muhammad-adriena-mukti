@@ -1,8 +1,18 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
   output: 'export',
-  basePath: '/portofolio-muhammad-adriena-mukti',
-  assetPrefix: '/portofolio-muhammad-adriena-mukti',
+
+  basePath: isProd
+    ? '/portofolio-muhammad-adriena-mukti'
+    : '',
+
+  assetPrefix: isProd
+    ? '/portofolio-muhammad-adriena-mukti'
+    : '',
+
   images: {
     unoptimized: true,
   },

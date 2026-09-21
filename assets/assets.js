@@ -109,30 +109,30 @@ export const assets = {
 
 export const workData = [
 
-    {
-        title: 'Apps for my Her D',
-        description: 'Web Application for D',
-        bgImage: publicPath('/bucin-1.jpg'),
+    // {
+    //     title: 'Apps for my Her D',
+    //     description: 'Web Application for D',
+    //     bgImage: publicPath('/bucin-1.jpg'),
 
-        category: 'Web Development',
+    //     category: 'Web Development',
 
-        overview:
-            'A web application developed to provide an accessible and user-friendly digital experience.',
+    //     overview:
+    //         'A web application developed to provide an accessible and user-friendly digital experience.',
 
-        demoUrl: 'https://adrienamukti.github.io/gf-dini-apps/',
+    //     demoUrl: 'https://adrienamukti.github.io/gf-dini-apps/',
 
-        technologies: [
+    //     technologies: [
             
-        ],
+    //     ],
 
-        features: [
+    //     features: [
          
-        ],
+    //     ],
 
-        images: [
+    //     images: [
             
-        ]
-    },
+    //     ]
+    // },
 
     {
         slug: 'competency-assessment-system',
